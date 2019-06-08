@@ -10,7 +10,7 @@ $(function(){
     button.text('Connecting...');
     miBand.connect().then(result => {
       if (result) {
-        button.text('Connect');
+        button.text('Connect ok');
        // alert("User chose the red pill");
         initEverything(miBand);
         showInfoSections()
