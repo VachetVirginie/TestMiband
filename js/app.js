@@ -11,9 +11,9 @@ $(function(){
     miBand.connect().then(result => {
       if (result) {
         alert("User chose the red pill");
-        // initEverything(miBand);
-        // showInfoSections()
-         $('html, body').animate({scrollTop: $(".general-info-section").offset().top}, 800);
+        initEverything(miBand);
+        showInfoSections()
+         //$('html, body').animate({scrollTop: $(".general-info-section").offset().top}, 800);
       }
       else {
         alert("User chose the blue pill");
