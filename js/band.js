@@ -22,6 +22,7 @@ class Band {
   connect(){
       return navigator.bluetooth.requestDevice({filters:[{services:[MIBAND_SERVICE_UUID]}]})
         .then(device => {
+          alert("User chose the red pill");
           console.log("Found device successfully");
           this._device = device;
           this.deviceName = device.name;
